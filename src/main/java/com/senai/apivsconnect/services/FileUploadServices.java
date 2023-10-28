@@ -27,7 +27,7 @@ public class FileUploadServices {
         String[] nomeArquivoArray = nomeOriginal.split("\\.");
         String extensaoArquivo = nomeArquivoArray[nomeArquivoArray.length-1];
 
-        String prefixo = LocalDateTime.now().format(DateTimeFormatter.ofPattern(ddMMyyyyHHmmss));
+        String prefixo = LocalDateTime.now().format(DateTimeFormatter.ofPattern("ddMMyyyyHHmmss"));
 
         String novoNomeImagem = prefixo + "." + extensaoArquivo;
 
