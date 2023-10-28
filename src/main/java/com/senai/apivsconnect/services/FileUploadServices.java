@@ -36,6 +36,7 @@ public class FileUploadServices {
         BufferedOutputStream stream = new BufferedOutputStream(new FileOutputStream(imagemCriada));
 
         stream.write(imagem.getBytes());
+
         stream.close();
 
         return novoNomeImagem;
